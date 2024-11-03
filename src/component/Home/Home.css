@@ -1,0 +1,120 @@
+.home{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.home > div{
+    flex: 1fr;
+}
+.my-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my-details .brief{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(43, 42, 42);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 15px;
+}
+p{
+    color: rgb(65, 65, 65);
+}
+.my-details p{
+    font-size: 35px;
+    font-weight: 700;
+    padding: 0;
+}
+.my-details .name span{
+    color: rgb(21, 90, 238);
+}
+.my-details .role{
+    color: rgb(36, 224, 137);
+}
+
+.my-image img{
+    width: 350px;
+    border-radius: 40px;
+    box-shadow: 4px 4px 10px rgb(0, 68, 255) ;
+}
+.my-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    margin-top: 10px;
+    display: flex;
+    padding-top: 20px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .resume{
+    color: rgb(0, 80, 199);
+    background-color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 6px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 80, 199);
+}
+.info .resume:hover{
+   color: white;
+   background-color: rgb(0, 80, 199);
+   transition: 0.1s;
+}
+
+.info .social-icon{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.social-icon a{
+    text-decoration: none;
+}
+.social-icon .icon{
+    font-size: 35px;
+}
+.social-icon .linkedin{
+    color: rgb(22, 54, 231);
+}
+.social-icon .whatsapp{
+    color: rgb(15, 255, 87);
+}
+
+.social-icon .icon:hover {
+    translate: 0 -6px;
+    cursor: pointer;
+  }
+
+  @media (max-width:850px){
+    .my-image img{
+        width: 200px;
+        border-radius: 40px;
+    }
+  }
+  @media (max-width:650px){
+    .my-image{
+       display: none;
+    }
+    .my-details p{
+        font-size: 30px;
+        font-weight: 700;
+        padding: 0;
+    }
+  }

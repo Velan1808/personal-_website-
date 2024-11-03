@@ -1,0 +1,156 @@
+.skills{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+}
+hr{
+    width: 96%;
+    border: none;
+    background-color: black;
+    height: 3px;
+    margin: 0 auto;
+}
+.skills .title-s{
+    margin: 20px ;
+    font-size: 40px;
+    color: rgb(12, 153, 247);
+}
+.skills-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* From Uiverse.io by joe-watson-sbf */ 
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 380px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(80, 112, 255);
+    border-radius: 1rem;
+  }
+  
+  .flip-card-back{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .flip-card-back p{
+    display: flex;
+    flex-direction: column;
+  }
+   .skill-icon{
+    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+   }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, rgb(196, 255, 252) 60%, rgb(222, 254, 255) 88%,
+       rgb(195, 255, 255) 40%, rgba(80, 235, 255, 0.603) 48%);
+    color: rgb(67, 86, 255);
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(196, 255, 252) 30%, rgb(80, 243, 255) 88%,
+       rgb(196, 243, 255) 40%, rgb(160, 241, 255) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back p img{
+    width: 100px;
+  }
+  .flip-card-back .html{
+    color: rgba(252, 54, 28, 0.966);
+  }
+  .flip-card-back .css{
+    color: rgb(23, 96, 255);
+  }
+  .flip-card-back .javascript{
+    color: rgb(253, 249, 5);
+  }
+  .flip-card-back .react{
+    color: rgb(0, 132, 255);
+  }
+  .flip-card-back .node{
+    color: rgb(24, 240, 24);
+  }
+  .flip-card-back .mongodb{
+    color: rgb(0, 126, 0);
+  }
+  .flip-card-back .postman{
+    color: rgb(253, 106, 21);
+  }
+
+  @media (max-width:1100px){
+    .skills-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+    }
+    .third{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 60%;
+    }
+  }
+  @media (max-width:740px){
+    .skills-details{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .third{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0;
+    }
+  }
